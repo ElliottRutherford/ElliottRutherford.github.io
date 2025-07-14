@@ -25,32 +25,74 @@
         </header>
         
         <main>
-            <article>
-                <h2>Contact Info</h2>
-                <ul>
-                    <h3>Socials</h3>
-                    <li></li>
-                    <li>
-                        <a href="https://www.instagram.com/rutherford.elliott/" target="_blank" rel="noopener noreferrer">
-                            <img src="resources/images/Insta.jpg" alt="Instagram logo">
-                            <span>@rutherford.elliott</span>
+            <section id="contact-page" class="section-container">
+                <h2>Get in Touch</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through the form below, or connect with me directly!</p>
+
+                <div class="contact-form-container">
+                    <form action="#" method="POST"> <!-- action="#" means form won't submit anywhere for now -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="user_email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="user_message" rows="6" required></textarea>
+
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="direct-contact-info">
+                    <h3>Or Connect Directly:</h3>
+                    <ul>
+                        <li>
+                            <a href="mailto:ElliottRutherford06@gmail.com">
+                                <img src="resources/images/email_icon.png" alt="Email icon">
+                                <span>ElliottRutherford06@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:304-563-1727">
+                                <img src="resources/images/Phone_icon.png" alt="Phone icon">
+                                <span>304-563-1727</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ElliottRutherford" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/github.png" alt="Github logo">
+                                <span>GitHub Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rutherford.elliott/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/Insta.jpg" alt="Instagram logo">
+                                <span>Instagram Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resume-cta">
+                    <h3>Download My Resume:</h3>
+                    <button class="resume-button">
+                        <a href="resources/documents/Elliott_Rutherford_Resume.pdf" download="Elliott_Rutherford_Resume.pdf">
+                            Download Resume (PDF)
                         </a>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </article>
+                    </button>
+                </div>
+            </section>
         </main>
 
         <footer>
             <h3><strong>Contact Me: </strong></h3>
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/rutherford.elliott/" target="_blank" rel="noopener noreferrer">
-                        <img src="resources/images/Insta.jpg" alt="Instagram logo">
-                        <span>@rutherford.elliott</span>
-                     </a>
+                    <a href="mailto:ElliottRutherford06@gmail.com">
+                        <img src="resources/images/email_icon.png" alt="Email icon">
+                        <span>ElliottRutherford06@gmail.com</span>
+                    </a>
                 </li>
                 <li>
                     <a href="tel:304-563-1727">
@@ -59,9 +101,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:ElliottRutherford06@gmail.com">
-                        <img src="resources/images/email_icon.png" alt="Email icon">
-                        <span>ElliottRutherford06@gmail.com</span>
+                    <a href="https://www.linkedin.com/in/elliott-rutherford-997869374/" target="_blank" rel="noopener noreferrer">
+                        <img src="resources/images/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Linkedin logo">
+                        <span>Linkedin</span>
                     </a>
                 </li>
                 <li>
@@ -69,6 +111,12 @@
                         <img src="resources/images/github.png" alt="Github logo">
                         <span>@rutherford.elliott</span>
                     </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/rutherford.elliott/" target="_blank" rel="noopener noreferrer">
+                        <img src="resources/images/Insta.jpg" alt="Instagram logo">
+                        <span>@rutherford.elliott</span>
+                     </a>
                 </li>
             </ul>
             <button class="resume-button">
