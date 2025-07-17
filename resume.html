@@ -4,6 +4,60 @@
     <head>
         <title>Elliott Rutherford - Resume</title>
         <link rel="stylesheet" href="resources/styles.css">
+        <style>
+            .resume-container {
+                max-width: 960px;
+                margin: 40px auto;
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+
+            .resume-container h2 {
+                color: #007bff;
+                margin-bottom: 25px;
+                font-size: 2em;
+            }
+
+            .resume-viewer {
+                width: 100%;
+                height: 800px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+
+            .resume-download-button {
+                display: inline-block;
+                margin-top: 30px;
+                background-color: #007bff;
+                border: none;
+                padding: 12px 25px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1.1em;
+                font-weight: bold;
+                text-align: center;
+                transition: background-color 0.2s ease;
+            }
+
+            .resume-download-button a {
+                color: white;
+                text-decoration: none;
+                display: block;
+            }
+
+            .resume-download-button:hover {
+                background-color: #0056b3;
+            }
+
+            @media (max-width: 767px) {
+                .resume-viewer {
+                    height: 600px; 
+                }
+            }
+        </style>
     </head>
 
     <body>
@@ -12,9 +66,9 @@
             <a href="index.html"><h1>ER</h1></a>
             <nav class="nav-left"> 
                 <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
                     <li><a href="resume.html">Resume</a></li>
                 </ul>
             </nav>
@@ -26,6 +80,22 @@
         </header>
 
         <main>
+            <section class="resume-container">
+                <h2>My Resume</h2>
+                <p>Below you can view my full resume directly in your browser. Feel free to download a copy as well!</p>
+
+                <!-- Iframe to embed the PDF resume -->
+                <iframe src="resources/documents/Elliott_Rutherford_Resume.pdf" class="resume-viewer" title="Elliott Rutherford Resume">
+                    This browser does not support PDFs. Please download the resume to view it.
+                </iframe>
+
+                <!-- Download button -->
+                <button class="resume-download-button">
+                    <a href="resources/documents/Elliott_Rutherford_Resume.pdf" download="Elliott_Rutherford_Resume.pdf">
+                        Download Resume (PDF)
+                    </a>
+                </button>
+            </section>
             <section id="projects">
                 <h2>Projects:</h2>
                 <div> <button>&lt;</button>

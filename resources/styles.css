@@ -19,7 +19,7 @@ body {
 
 main {
     flex-grow: 1;
-    padding-top: 150px;
+    padding-top: 70px; /* Adjusted to account for fixed header, allowing hero to fill below it */
 }
 
 header {
@@ -75,27 +75,75 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-h1 {
+/* Updated styles for the Hero Section */
+.hero-section {
+    position: relative; /* Needed for absolute positioning of image and content */
+    width: 100%;
+    height: 600px; /* Adjust height as desired to make picture 'take up the whole section' */
+    overflow: hidden; /* Ensures image doesn't overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #007bff;
-    margin-top: 40px;
+    color: white; /* Default text color for overlaid content */
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the section without distortion */
+    z-index: 0; /* Behind overlay and content */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)); /* Faded/blended color effect */
+    z-index: 1; /* Between image and content */
+}
+
+.hero-content {
+    position: relative; /* Stacks correctly over overlay */
+    z-index: 2; /* On top of everything */
+    padding: 20px;
+    max-width: 800px; /* Limit content width for readability */
+}
+
+.hero-content h1 {
+    font-size: 4em; /* Make your name prominent */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability on image */
+    color: white; /* Ensure name is white */
+}
+
+.hero-content .hero-bio {
+    font-size: 1.5em; /* Short bio size */
     margin-bottom: 20px;
-    font-size: 3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+    line-height: 1.4;
 }
 
-h3 {
-    text-align: center;
-}
-
-main > img {
+/* Remove or comment out previous main > img and hero-section h1 styles to avoid conflict */
+/* main > img {
     display: block;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
-    margin: 20px auto;
+    margin: 0px auto 20px auto;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 3px solid #007bff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 5px solid #007bff;
+    transition: transform 0.3s ease-in-out;
 }
+
+main > img:hover {
+    transform: scale(1.05);
+} */
 
 article {
     text-align: left;
@@ -424,8 +472,8 @@ p {
     font-size: 1.5em;
 }
 
-.resume-cta .resume-button { /* Reuses your existing .resume-button style */
-    /* No additional styles usually needed here unless you want to override */
+.resume-cta .resume-button {
+    /* Reuses your existing .resume-button style */
 }
 
 .button {
