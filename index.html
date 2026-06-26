@@ -1,182 +1,562 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elliott Rutherford — CS Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<html>
+    :root {
+      --navy:    #0D1B2A;
+      --navy2:   #132336;
+      --slate:   #8892A4;
+      --offwhite:#F0EEE9;
+      --indigo:  #5C6BC0;
+      --indigo-l:#7986CB;
+      --amber:   #F2A65A;
+      --border:  rgba(255,255,255,0.07);
+    }
 
-    <head>
-        <title>Elliott Rutherford - Portfolio</title>
-        <link rel="stylesheet" href="resources/styles.css">
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><h1>ER</h1></a>
-            <nav class="nav-left"> 
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-            </nav>
-            <nav class="nav-right"> 
-                <ul>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-             </nav>
-        </header>
+    html { scroll-behavior: smooth; }
 
-        <main>
-            <section class="hero-section">
-                <img src="resources/images/me.jpg" alt="Elliott Rutherford" class="hero-image">
-                <div class="overlay"></div>
-                <div class="hero-content">
-                    <h1>Hi, I'm Elliott</h1>
-                    <p class="hero-bio">I'm a freelance web developer from West Virgina.</p>
-                </div>
-            </section>
-            <article id="about">
-                <h2>About Me:</h2>
-                <p>
-                    Hello there! My name is Elliott Rutherford. I'm freelance, fullstack developer from West Virgina currently majoring Computer Science at Marsall University. 
-                    My goal is to help you or you business build robost, user freindly websites for you and all of your visitors.<br>
-                    Outside of school, I'm also a proud dog owner, a member of the astronomy club at Marshall, and in my free time enjoy watching science fiction shows, playing video games, & reading comic books, and most importantly looking for inspirations in everyday life.
-                </p>
-                <button class="resume-button">
-                    <a href="resources/documents/Elliott_Rutherford_Resume.pdf" target="_blank" rel="noopener noreferrer">View my Resume</a>
-                </button>
-            </article>
-            <section id="projects">
-                <h2>Projects:</h2>
-                <div> <button>&lt;</button>
-                    <div id="projects-carousel-track"> 
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 4</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 5</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a href="websites.html" target="_self">
-                                <div></div>
-                                <h3>Websites</h3>
-                                <p>Full list of websites I've designed for clients.</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 1</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 2</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 3</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 4</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 5</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a href="websites.html" target="_self">
-                                <div></div>
-                                <h3>Websites</h3>
-                                <p>Full list of websites I've designed for clients.</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 1</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 2</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                        <div> <a>
-                                <div></div>
-                                <h3>Project 3</h3>
-                                <p>Lorem Ipsum</p>
-                            </a>
-                        </div>
-                    </div> <button>&gt;</button> </div>
-            </section>
-                <article id="skills">
-                    <h2>Skills:</h2>
-                    <ul>
-                        <li><strong>Programming Languages: </strong>JavaScript (ES6+), Python, PHP, HTML5, CSS3</li>
-                        <li><strong>Front-End framkworks/Libraies: </strong>React.js, Vue.js, Angular, jQuery, Bootstrap, Tailwind CSS</li>
-                        <li><strong>Back-End Technologies: </strong>Node.js (Express), Django, Flask, Laravel, Ruby on Rails</li>
-                        <li><strong>Databases: </strong>MongoDB, PostgreSQL, MySQL, SQLite, Firebase Firestore</li>
-                        <li><strong>Version Control: </strong>Git, GitHub, GitLab, Bitbucket</li>
-                        <li><strong>Tools & Platforms: </strong>VS Code, npm, Yarn, Webpack, Babel, Docker, AWS (S3, EC2), Netlify, Vercel</li>
-                        <li><strong>Design & UI/UX: </strong>Figma, Adobe XD, Photoshop, Responsive Design, Wireframing, Prototyping</li>
-                        <li><strong>Other: </strong>API Integration (RESTful, GraphQL), SEO Best Practices, Performance Optimization, Cross-Browser Compatibility, Agile Methodologies</li>
-                    </ul>
-            </article>
-        </main>
+    body {
+      background: var(--navy);
+      color: var(--offwhite);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
 
-        <footer id="contact">
-            <h3><strong>Contact Me: </strong></h3>
-            <ul>
-                <li>
-                    <a href="mailto:ElliottRutherford06@gmail.com">
-                        <img src="resources/images/email_icon.png" alt="Email icon">
-                        <span>ElliottRutherford06@gmail.com</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:304-563-1727">
-                        <img src="resources/images/Phone_icon.png" alt="Phone icon">
-                        <span>304-563-1727</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/elliott-rutherford-997869374/" target="_blank" rel="noopener noreferrer">
-                        <img src="resources/images/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Linkedin logo">
-                        <span>Linkedin</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/ElliottRutherford" target="_blank" rel="noopener noreferrer">
-                        <img src="resources/images/github.png" alt="Github logo">
-                        <span>@rutherford.elliott</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/rutherford.elliott/" target="_blank" rel="noopener noreferrer">
-                        <img src="resources/images/Insta.jpg" alt="Instagram logo">
-                        <span>@rutherford.elliott</span>
-                     </a>
-                </li>
-            </ul>
-            <button class="resume-button">
-                    <a href="resources/documents/Elliott_Rutherford_Resume.docx" target="_blank" rel="noopener noreferrer">View my Resume</a>
-            </button>
-            <h6>© 2025 Elliott Rutherford. All Rights Reserved</h6>
-        </footer>
-        <script src="resources/script.js"></script>
-    </body>
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 6vw;
+      background: rgba(13,27,42,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700; font-size: 1.1rem;
+      color: var(--offwhite);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .nav-logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--slate); font-size: 0.875rem; text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--offwhite); }
 
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 10rem 6vw 6rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-eyebrow {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--amber); margin-bottom: 1.5rem;
+    }
+    .hero-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 700; line-height: 1.0;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.4rem;
+    }
+    .hero-name .line2 { color: var(--indigo-l); }
+    .hero-tagline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      font-weight: 300; color: var(--slate);
+      margin-bottom: 2.5rem;
+      display: flex; align-items: center; gap: 0.4em;
+    }
+    .cursor {
+      display: inline-block; width: 2px; height: 1.2em;
+      background: var(--amber); vertical-align: middle;
+      animation: blink 1.1s step-end infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: 6px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem; font-weight: 600;
+      text-decoration: none; cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: var(--indigo); color: #fff;
+      box-shadow: 0 0 0 0 rgba(92,107,192,0);
+    }
+    .btn-primary:hover { box-shadow: 0 8px 30px rgba(92,107,192,0.45); }
+    .btn-ghost {
+      border: 1px solid var(--border); color: var(--offwhite);
+      background: transparent;
+    }
+    .btn-ghost:hover { border-color: var(--indigo-l); }
+
+    /* hero grid lines (decorative) */
+    #hero::before {
+      content: '';
+      position: absolute; right: -10%; top: 15%; width: 55%; height: 70%;
+      background:
+        repeating-linear-gradient(90deg, var(--border) 0, var(--border) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(0deg,  var(--border) 0, var(--border) 1px, transparent 1px, transparent 60px);
+      border-radius: 2px;
+      pointer-events: none;
+    }
+    .hero-dot {
+      position: absolute; right: 12%; top: 38%;
+      width: 340px; height: 340px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(92,107,192,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 6vw; }
+    .section-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--amber); margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700; letter-spacing: -0.025em;
+      line-height: 1.15; margin-bottom: 3rem;
+    }
+    .divider { border: none; border-top: 1px solid var(--border); }
+
+    /* ── ABOUT ── */
+    #about { background: var(--navy2); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: start;
+    }
+    .about-bio p {
+      color: var(--slate); margin-bottom: 1.2rem; font-size: 1.05rem;
+    }
+    .about-bio p strong { color: var(--offwhite); font-weight: 500; }
+    .about-bio a { color: var(--indigo-l); text-decoration: none; }
+    .about-bio a:hover { text-decoration: underline; }
+
+    .skills-block h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--slate); margin-bottom: 0.75rem; margin-top: 2rem;
+    }
+    .skills-block h3:first-child { margin-top: 0; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tag {
+      padding: 0.3rem 0.8rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 0.82rem; color: var(--offwhite);
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* ── PROJECTS ── */
+    #projects {}
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem;
+      display: flex; flex-direction: column;
+      transition: border-color 0.2s, transform 0.2s;
+      text-decoration: none; color: inherit;
+    }
+    .project-card:hover {
+      border-color: var(--indigo);
+      transform: translateY(-4px);
+    }
+    .project-card.placeholder {
+      border-style: dashed;
+      opacity: 0.5; cursor: default;
+    }
+    .project-card.placeholder:hover { transform: none; border-color: var(--border); }
+    .project-icon {
+      width: 40px; height: 40px; border-radius: 8px;
+      background: rgba(92,107,192,0.15);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.25rem; font-size: 1.2rem;
+    }
+    .project-card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem; font-weight: 600;
+      margin-bottom: 0.5rem; letter-spacing: -0.01em;
+    }
+    .project-card p {
+      font-size: 0.9rem; color: var(--slate);
+      flex: 1; margin-bottom: 1.25rem; line-height: 1.6;
+    }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .project-tags .tag {
+      font-size: 0.75rem;
+      color: var(--indigo-l);
+      border-color: rgba(92,107,192,0.3);
+      background: rgba(92,107,192,0.08);
+    }
+    .project-link {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600; color: var(--indigo-l);
+      text-decoration: none; margin-top: 1.25rem;
+    }
+    .project-link:hover { color: var(--offwhite); }
+
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--navy2); }
+    .exp-list { display: flex; flex-direction: column; gap: 2.5rem; }
+    .exp-item {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 2rem; align-items: start;
+    }
+    .exp-date {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem; color: var(--slate);
+      padding-top: 0.2rem;
+      line-height: 1.5;
+    }
+    .exp-date strong { display: block; color: var(--amber); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.2rem; }
+    .exp-body h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem; font-weight: 600;
+      letter-spacing: -0.01em; margin-bottom: 0.2rem;
+    }
+    .exp-body .org {
+      font-size: 0.85rem; color: var(--indigo-l);
+      margin-bottom: 0.75rem;
+    }
+    .exp-body ul {
+      padding-left: 1.1rem; color: var(--slate);
+      font-size: 0.92rem; line-height: 1.75;
+    }
+    .exp-body ul li { margin-bottom: 0.3rem; }
+
+    /* ── EDUCATION ── */
+    #education {}
+    .edu-card {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: 10px; padding: 2.5rem;
+      display: flex; gap: 2rem; align-items: flex-start;
+    }
+    .edu-icon {
+      width: 52px; height: 52px; flex-shrink: 0; border-radius: 10px;
+      background: rgba(242,166,90,0.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+    }
+    .edu-info h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+    .edu-info .degree {
+      color: var(--indigo-l); font-size: 0.92rem; margin-bottom: 0.75rem;
+    }
+    .edu-meta {
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      font-size: 0.85rem; color: var(--slate);
+    }
+    .edu-meta span { display: flex; align-items: center; gap: 0.4rem; }
+    .edu-meta .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--amber); }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--navy2);
+      text-align: center;
+    }
+    #contact .section-title { margin-bottom: 1rem; }
+    #contact .sub {
+      color: var(--slate); font-size: 1rem; margin-bottom: 2.5rem;
+    }
+    .contact-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2rem 6vw;
+      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.8rem; color: var(--slate);
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .exp-item { grid-template-columns: 1fr; gap: 0.4rem; }
+      .edu-card { flex-direction: column; }
+      nav { padding: 1rem 5vw; }
+      .nav-links { gap: 1.2rem; }
+      .hero-cta { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cursor { animation: none; opacity: 1; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#hero">Elliott<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-dot"></div>
+    <p class="hero-eyebrow">CS Student · Marshall University · Huntington, WV</p>
+    <h1 class="hero-name">
+      Elliott<br/>
+      <span class="line2">Rutherford</span>
+    </h1>
+    <p class="hero-tagline">Building things that actually work<span class="cursor"></span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">View my work</a>
+      <a class="btn btn-ghost" href="Elliott_Rutherford_Resume.pdf" target="_blank">Download résumé ↗</a>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label reveal">About me</p>
+    <h2 class="section-title reveal">Code, curiosity,<br/>and a lot of coffee.</h2>
+    <div class="about-grid">
+      <div class="about-bio reveal">
+        <p>
+          I'm a <strong>Computer Science major at Marshall University</strong> (Class of 2029), maintaining a 4.0 major GPA while exploring the full stack — from Python scripts to React interfaces.
+        </p>
+        <p>
+          I'm currently looking for <strong>software engineering internships</strong> where I can contribute on real problems, learn fast, and work alongside people who care about what they build.
+        </p>
+        <p>
+          Outside of code, I spend my summers leading cabin groups at a youth leadership camp — which has taught me more about communication, adaptability, and staying calm under pressure than any class.
+        </p>
+        <p>
+          I'm also pursuing a <strong>Minor in Mathematics</strong> and earned a <strong>Microcredential in Principles of Leadership</strong> in August 2025. Dean's List every semester so far.
+        </p>
+        <p style="margin-top:1.8rem;">
+          <a href="Elliott_Rutherford_Resume.pdf" target="_blank">📄 View my full résumé →</a>
+        </p>
+      </div>
+      <div class="skills-block reveal">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">C++</span>
+          <span class="tag">Java</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+        </div>
+        <h3>Frameworks & Libraries</h3>
+        <div class="skill-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+        </div>
+        <h3>Tools</h3>
+        <div class="skill-tags">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">npm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label reveal">Work</p>
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="projects-grid">
+
+      <!-- PROJECT 1 — ResuméForge -->
+      <a class="project-card reveal" href="resume-builder.jsx" target="_blank">
+        <div class="project-icon">📄</div>
+        <h3>ResuméForge</h3>
+        <p>A live resume builder with a split-pane editor and real-time preview. Fill in your details and download a print-ready PDF — no sign-up, no backend, no cost.</p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">CSS-in-JS</span>
+          <span class="tag">JSX</span>
+        </div>
+        <span class="project-link">View source →</span>
+      </a>
+
+      <!-- PROJECT 2 -->
+      <a class="project-card reveal" href="#" target="_blank">
+        <div class="project-icon">🐍</div>
+        <h3>Project Title</h3>
+        <p>A short description of what this project does, the problem it solves, and what you learned building it. Keep it to 2–3 sentences.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Data</span>
+        </div>
+        <span class="project-link">View on GitHub →</span>
+      </a>
+
+      <!-- PROJECT 3 -->
+      <a class="project-card reveal" href="#" target="_blank">
+        <div class="project-icon">🌐</div>
+        <h3>Project Title</h3>
+        <p>A short description of what this project does, the problem it solves, and what you learned building it. Keep it to 2–3 sentences.</p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML/CSS</span>
+        </div>
+        <span class="project-link">View Project →</span>
+      </a>
+
+      <!-- PLACEHOLDER -->
+      <div class="project-card placeholder reveal">
+        <div class="project-icon">＋</div>
+        <h3>More coming soon</h3>
+        <p>Currently cooking up something new. Check back or follow me on GitHub.</p>
+        <div class="project-tags"><span class="tag">TBD</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label reveal">Background</p>
+    <h2 class="section-title reveal">Experience</h2>
+    <div class="exp-list">
+
+      <div class="exp-item reveal">
+        <div class="exp-date">
+          <strong>Work</strong>
+          Apr 2026 – Present
+        </div>
+        <div class="exp-body">
+          <h3>Independent Delivery Driver</h3>
+          <p class="org">DoorDash — Huntington, WV</p>
+          <ul>
+            <li>Managed independent daily schedules and optimized delivery routes for timely service.</li>
+            <li>Navigated real-time logistical variables — traffic, app issues, order discrepancies — while staying communicative with customers.</li>
+            <li>Handled contractor responsibilities including expense tracking, mileage logs, and earnings management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-date">
+          <strong>Volunteer</strong>
+          Summers 2024–2026
+        </div>
+        <div class="exp-body">
+          <h3>Camp Counselor & Cabin Leader</h3>
+          <p class="org">Bloomingdale Salem Baptist Church — Barboursville, WV</p>
+          <ul>
+            <li>Facilitated activities, mentorship, and logistics for Camp Thrive and Bloom Junior Camp — supporting 100+ youth per summer.</li>
+            <li>Returned each summer to lead cabin groups at a high-intensity, week-long leadership summit for grades 6–12.</li>
+            <li>Collaborated with a 10+ person team to adapt schedules on the fly and resolve team dynamics quickly.</li>
+            <li>Managed cash transactions at the camp snack shop, including daily register balancing and inventory tracking.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <p class="section-label reveal">Academia</p>
+    <h2 class="section-title reveal">Education</h2>
+    <div class="edu-card reveal">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-info">
+        <h3>Marshall University</h3>
+        <p class="degree">B.S. in Computer Science — Minor: Mathematics · Expected May 2029</p>
+        <div class="edu-meta">
+          <span><span class="dot"></span> GPA: 3.16 overall · 4.0 major</span>
+          <span><span class="dot"></span> Dean's List — All Semesters</span>
+          <span><span class="dot"></span> Microcredential: Principles of Leadership (Aug 2025)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label reveal">Get in touch</p>
+    <h2 class="section-title reveal">Open to internship<br/>opportunities.</h2>
+    <p class="sub reveal">I'm actively seeking summer or part-time software engineering internships.<br/>If you're building something interesting, let's talk.</p>
+    <div class="contact-links reveal">
+      <a class="btn btn-primary" href="mailto:ElliottRutherford@email.com">Send me an email</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/ElliottRutherford" target="_blank">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/ElliottRutherford" target="_blank">GitHub ↗</a>
+      <a class="btn btn-ghost" href="Elliott_Rutherford_Resume.pdf" target="_blank">Résumé PDF ↗</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Elliott Rutherford</span>
+    <span>Built with HTML, CSS & a lot of caffeine.</span>
+  </footer>
+
+  <!-- SCROLL REVEAL SCRIPT -->
+  <script>
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
 </html>
